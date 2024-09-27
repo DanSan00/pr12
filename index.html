@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аккордеон</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>Аккордеон</h2>
+
+    <div class="acc">
+        <div class="acc-item">
+            <div class="acc-header" onclick="toggleAccordion(this)">Раздел 1</div>
+            <div class="acc-content">
+                <p>Содержимое раздела 1.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="acc-header" onclick="toggleAccordion(this)">Раздел 2</div>
+            <div class="acc-content">
+                <p>Содержимое раздела 2.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="acc-header" onclick="toggleAccordion(this)">Раздел 3</div>
+            <div class="acc-content">
+                <p>Содержимое раздела 3.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAccordion(header) {
+            const content = header.nextElementSibling;
+            content.classList.toggle("show");
+        }
+    </script>
+
+</body>
+
+</html>

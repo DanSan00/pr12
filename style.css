@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.acc {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.acc-item {
+    border-bottom: 1px solid #7c2732;
+}
+
+.acc-header {
+    padding: 15px;
+    cursor: pointer;
+    background-color: #4c63af;
+    color: white;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.acc-header:hover {
+    background-color: #8e45a0;
+}
+
+.acc-content {
+    padding: 0 15px;
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+}
+
+.acc-content.show {
+    display: block;
+    max-height: 200px;
+    /* Максимальная высота для анимации */
+}
